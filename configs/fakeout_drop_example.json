@@ -1,0 +1,43 @@
+{
+  "output_name": "dca_espagne",
+  "phase1": {
+    "hook_background_path": "assets/backgrounds/sober_finance_bg.jpg",
+    "hook_text": "Le meilleur conseil financier que j'ai entendu de ma vie :",
+    "second_text": "DCA sur le S&P 500 pendant 30 ans.",
+    "compound_curve_path": "assets/backgrounds/compound_curve.png",
+    "calm_music_path": null
+  },
+  "cut": {
+    "sfx_path": "assets/sfx/siiick.mp3"
+  },
+  "drop": {
+    "drop_music_path": "assets/music/trap_beat/killers.mp3",
+    "shake_texts": [
+      { "start": 4.5, "end": 4.7, "text": "NON." },
+      { "start": 4.7, "end": 5.0, "text": "TOUT SUR LA VICTOIRE DE L'ESPAGNE CE SOIR 🇪🇸" }
+    ],
+    "background_clips": [
+      "assets/clips/espagne_but1.mp4",
+      "assets/clips/espagne_celebration.mp4",
+      "assets/clips/espagne_supporters.mp4"
+    ],
+    "overlays": [
+      { "start": 5.0, "end": 6.5, "text": "+110% EN 90 MINUTES" },
+      { "start": 6.5, "end": 8.0, "text": "LE S&P 500 MET 8 ANS À FAIRE ÇA" },
+      { "start": 8.0, "end": 9.5, "text": "LAMINE YAMAL = ACTIF NON CORRÉLÉ" },
+      { "start": 9.5, "end": 11.0, "text": "VOLATILITÉ : OUI. REGRETS : JAMAIS." },
+      { "start": 11.0, "end": 12.0, "text": "ON APPELLE ÇA DE L'ALPHA." }
+    ]
+  },
+  "punchline": {
+    "text_1": "This is not financial advice.",
+    "text_2": "Then again.",
+    "text_2_start": 13.0
+  },
+  "timing": {
+    "phase1_duration": 4.0,
+    "cut_duration": 0.5,
+    "drop_end": 12.0,
+    "punchline_duration": 2.0
+  }
+}

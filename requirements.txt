@@ -1,0 +1,24 @@
+anthropic>=0.40.0
+python-dotenv>=1.0.0
+
+# Step 2 - voice + timestamps
+edge-tts>=6.1.0
+faster-whisper>=1.0.0
+
+# Step 3 - visuals
+requests>=2.31.0
+ddgs>=9.0.0          # format14 character "case file" photo search, no API key needed
+
+# format14 -- free, non-cloned, more natural TTS alternative to edge-tts
+kokoro>=0.9.0
+soundfile>=0.12.0
+yt-dlp>=2026.1.1   # format14 real-clip background sourcing (also used by youtube_pipeline.py)
+
+# format15 -- real background removal for AI-generated fight sprites (chroma-key
+# alone fails whenever the generated outfit color is close to the key color)
+rembg>=2.0.0
+
+# Google OAuth (YouTube upload, Drive manual-post upload, Drive clip sourcing, Gmail recap)
+google-api-python-client>=2.100.0
+google-auth>=2.30.0
+google-auth-oauthlib>=1.2.0

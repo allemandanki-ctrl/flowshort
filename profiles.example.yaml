@@ -1,0 +1,46 @@
+# Direct-to-SaaS publishing — maps each platform to the provider that posts it.
+#
+# COPY THIS FILE to `profiles.yaml` and fill in real accountIds.
+# NO SECRETS HERE: only env-var NAMES + Zernio accountIds. Put actual keys in .env.
+#
+# How to get Zernio accountIds (the connected social channel, not the API key):
+#   python schedule_batch.py --list-accounts zernio_a
+#   python schedule_batch.py --list-accounts zernio_b
+#
+# Multi-brand: each brand under users/<name>/ has its OWN profiles.yaml —
+# add different provider keys (and a different env var per brand) if a new
+# brand needs separate Ayrshare/Zernio accounts.
+
+providers:
+  ayrshare_main:
+    type: ayrshare
+    api_key_env: AYRSHARE_API_KEY
+
+  zernio_a:            # compte frère — TikTok + YouTube
+    type: zernio
+    api_key_env: ZERNIO_A_API_KEY
+
+  zernio_b:            # compte principal — Instagram + Facebook
+    type: zernio
+    api_key_env: ZERNIO_B_API_KEY
+
+platforms:
+  snapchat:
+    provider: ayrshare_main
+    format: spotlight     # spotlight | story | saved_story
+
+  tiktok:
+    provider: zernio_a
+    account_id: "REPLACE_tiktok_account_id"
+
+  youtube:
+    provider: zernio_a
+    account_id: "REPLACE_youtube_account_id"
+
+  instagram:
+    provider: zernio_b
+    account_id: "REPLACE_instagram_account_id"
+
+  facebook:
+    provider: zernio_b
+    account_id: "REPLACE_facebook_account_id"

@@ -1,0 +1,13 @@
+assets/
+output/
+state/
+videos/
+logs/
+MVSEP-CDX23-Cinematic-Sound-Demixing/
+__pycache__/
+*.pyc
+.env
+users/
+flowshort.lock
+flowshort_launch.log
+scratch/

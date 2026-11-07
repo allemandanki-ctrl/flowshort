@@ -1,0 +1,15 @@
+{
+  "output_name": "market_crashed_unbothered",
+  "input_path": "input.mp4",
+  "crop_box": null,
+  "trim": { "start": 0, "end": null },
+  "keep_audio": true,
+  "redactions": [
+    { "box": [0, 0, 110, 55], "start": 5.5, "end": 9.0 },
+    { "box": [265, 355, 178, 106], "start": 12.3, "end": 25.8 }
+  ],
+  "lines": [
+    { "label": "THEM", "text": "The market crashed, aren't you worried?" },
+    { "label": "ME", "text": "..." }
+  ]
+}
